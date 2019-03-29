@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <style>
+    :root {
+      box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: inherit;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      vertical-align: baseline;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.4;
+      font-weight: 400;
+    }
+
+    .cf::after {
+      display: table;
+      clear: both;
+      content: "";
+    }
+
+
+    .container {
+      max-width: 955px;
+      padding-left: 5px;
+      padding-right: 5px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .icon__menu {
+      list-style: none;
+      background: lightcoral;
+    }
+
+    .icon__list {
+      float: left;
+      width: 10.89%;
+      position: relative;
+      text-align: center;
+    }
+
+    .icon__list:not(:last-child) {
+      margin-right: 3.96%;
+    }
+
+    .icon__item {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: yellow;
+      padding-top: 100%;
+      border-radius: 50%;
+      font-size: calc(20px + 83 * ((100vw - 200px) / 755));
+      cursor: pointer;
+    }
+
+    @media (min-width: 955px) {
+      .icon__item {
+        font-size: 103px;
+      }
+    }
+
+    .icon img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .icon__ico {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="icon">
+    <div class="container">
+      <ul class="icon__menu cf">
+        <li class="icon__list">
+          <a class="icon__item"><img class="icon__ico" src="icon/logo-flickr.png" alt=""></a>
+        </li>
+        <li class="icon__list">
+          <a class="icon__item"><i class="icon__ico fas fa-arrow-circle-down"></i></a>
+        </li>
+        <li class="icon__list">
+          <a class="icon__item"><i class="icon__ico fas fa-arrow-circle-up"></i></a>
+        </li>
+        <li class="icon__list">
+          <a class="icon__item"><i class="icon__ico fas fa-arrow-circle-left"></i></a>
+        </li>
+        <li class="icon__list">
+          <a class="icon__item"><i class="icon__ico fas fa-arrow-circle-right"></i></a>
+        </li>
+        <li class="icon__list">
+          <a class="icon__item"><i class="icon__ico fas fa-arrows-alt"></i></a>
+        </li>
+        <li class="icon__list">
+          <a class="icon__item"><img class="icon__ico" src="icon/digg-logo.png" alt=""></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="src/script/app.js"></script>
+</body>
+
+</html>
